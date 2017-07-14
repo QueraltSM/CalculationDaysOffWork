@@ -49,7 +49,7 @@ string calculo (string  fechaBaja, string  fechaAlta) {
     int mesBajaInteger = atoi(mesBaja);
     int mesAltaInteger = atoi(mesAlta);
     
-    int mesDiferencia =  mesDiferencia = mesBajaInteger -  mesAltaInteger;
+    int mesDiferencia =  mesDiferencia = mesAltaInteger -  mesBajaInteger;
 
          if (mesDiferencia == 0) {
                      return  "The employer was " + std::to_string(diasDiferencia) + " out of work.";
@@ -65,6 +65,6 @@ string calculo (string  fechaBaja, string  fechaAlta) {
 
 
 int  main(int argc, char** argv) {    
-        cout << calculo("17/05", "11/04")  << endl;
+        cout << calculo("17/04", "11/08")  << endl;
         return 0;      
 }
