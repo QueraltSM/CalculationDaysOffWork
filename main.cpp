@@ -24,7 +24,7 @@ string calculo (string  fechaBaja, string  fechaAlta) {
     if (diaBajaInteger >= diaAltaInteger) {
              diasDiferencia = diaBajaInteger - diaAltaInteger;
     } else  {
-            diasDiferencia =(30-diaBajaInteger) +diaAltaInteger;
+            diasDiferencia = diaAltaInteger - diaBajaInteger;
     }
     
    
@@ -65,6 +65,6 @@ string calculo (string  fechaBaja, string  fechaAlta) {
 
 
 int  main(int argc, char** argv) {    
-        cout << calculo("17/04", "11/08")  << endl;
+        cout << calculo("19/04", "11/08")  << endl;
         return 0;      
 }
