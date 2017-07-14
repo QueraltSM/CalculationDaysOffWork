@@ -1,43 +1,4 @@
-#include <cstdlib>
-#include <iostream>
-using namespace std;
-
-string calculo (string  fechaBaja, string  fechaAlta) {
-    char diaBaja[2] = "";
-    int i  = 0;
-    while (fechaBaja[i] != '/')  {
-             diaBaja[i] += fechaBaja[i];
-             i++;
-    }
-    
-    char diaAlta[2] = ""; 
-    int j = 0;
-    while (fechaAlta[j] != '/') {
-            diaAlta[j] += fechaAlta[j];
-             j++;
-    }
-    
-    int diaBajaInteger = atoi(diaBaja);
-    int diaAltaInteger = atoi(diaAlta);
-    
-    int diasDiferencia = 0;
-    if (diaBajaInteger <= diaAltaInteger) {
-             diasDiferencia = diaAltaInteger - diaBajaInteger;
-    } else  {
-            diasDiferencia = diaBajaInteger - diaAltaInteger;
-    }
-    
-   
-    char mesBaja[2] = "";
-     int k = 0;
-     i++;
-    while (fechaBaja[i] != '\0')  {
-            mesBaja[k] += fechaBaja[i];
-            i++;
-            k++;
-    }
-    
-    char mesAlta[2] = ""; 
+}
     int u = 0;
     j++;
     while (fechaAlta[j] != '\0') {
